@@ -1,7 +1,5 @@
 /* 全域設定 */
-html {
-  scroll-behavior: smooth; /* 平滑滾動 */
-}
+html { scroll-behavior: smooth; }
 body {
   font-family: "Microsoft JhengHei", sans-serif;
   margin: 0;
@@ -35,26 +33,32 @@ nav a {
   font-weight: bold;
 }
 
-/* Hero 區塊 */
-.hero {
-  text-align: center;
-  padding: 50px 20px;
-  background: #fff;
+/* Hero & Section 背景 */
+.section-bg {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  padding: 80px 20px;
 }
-.hero img {
-  max-width: 300px;
-  border-radius: 10px;
+.section-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+.section-bg h2, .section-bg p, .section-bg ul {
+  position: relative;
+  z-index: 1;
 }
 
-/* Content 區塊 */
+/* Content */
 .content {
-  padding: 40px 20px;
   max-width: 1200px;
   margin: auto;
+  padding: 40px 20px;
 }
-.content h2 {
-  color: #4CAF50;
-}
+.content h2 { color: #4CAF50; }
 
 /* Gallery 幻燈片 */
 .slider {
@@ -92,13 +96,7 @@ footer {
 
 /* 手機板調整 */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 1.5em;
-  }
-  .hero {
-    padding: 30px 10px;
-  }
-  .slides img {
-    width: 100%; /* 手機滿版 */
-  }
+  header h1 { font-size: 1.5em; }
+  .hero { padding: 30px 10px; }
+  .slides img { width: 100%; }
 }
