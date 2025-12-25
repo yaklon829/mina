@@ -1,63 +1,46 @@
+/* 全域設定 */
 body {
-  font-family: "Microsoft JhengHei", sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #333;
+  font-family: "Microsoft JhengHei", sans-serif;
 }
-header {
-  background: #4CAF50;
-  color: white;
-  padding: 20px;
-  text-align: center;
+
+/* 區塊寬度自動貼合 */
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
 }
-.logo {
-  height: 80px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+
+/* 圖片自適應 */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 導覽列 RWD */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 nav a {
-  color: white;
-  margin: 0 15px;
+  margin: 10px;
   text-decoration: none;
+  color: white;
   font-weight: bold;
 }
-.hero {
-  text-align: center;
-  padding: 50px 20px;
-  background: #fff;
-}
-.hero img {
-  max-width: 300px;
-  border-radius: 10px;
-}
-.content {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-.content h2 {
-  color: #4CAF50;
-}
-.slider {
-  overflow-x: auto;
-  white-space: nowrap;
-}
-.slides img {
-  height: 200px;
-  margin-right: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-.qr {
-  height: 200px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+
+/* 手機板調整 */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+  .hero {
+    padding: 30px 10px;
+  }
+  .gallery img {
+    width: 100%; /* 手機板圖片滿版 */
+    margin-bottom: 15px;
+  }
 }
