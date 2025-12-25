@@ -1,34 +1,93 @@
 /* 全域設定 */
+html {
+  scroll-behavior: smooth; /* 平滑滾動 */
+}
 body {
-  margin: 0;
   font-family: "Microsoft JhengHei", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
 }
 
-/* 區塊寬度自動貼合 */
-.content {
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 20px;
+/* Header */
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
-
-/* 圖片自適應 */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.logo {
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
-
-/* 導覽列 RWD */
 nav {
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 nav a {
+  color: white;
   margin: 10px;
   text-decoration: none;
-  color: white;
   font-weight: bold;
+}
+
+/* Hero 區塊 */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+.hero img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* Content 區塊 */
+.content {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.content h2 {
+  color: #4CAF50;
+}
+
+/* Gallery 幻燈片 */
+.slider {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* QR Code */
+.qr {
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 /* 手機板調整 */
@@ -39,8 +98,7 @@ nav a {
   .hero {
     padding: 30px 10px;
   }
-  .gallery img {
-    width: 100%; /* 手機板圖片滿版 */
-    margin-bottom: 15px;
+  .slides img {
+    width: 100%; /* 手機滿版 */
   }
 }
