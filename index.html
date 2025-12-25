@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mina 清潔服務｜居家與辦公室清潔</title>
-  <meta name="description" content="Mina清潔服務，專業居家清潔、辦公室清潔、裝潢後清潔，乾淨就是最簡單的幸福。立即預約，享受成就感！">
+  <meta name="description" content="Mina清潔服務，專業居家、辦公室與裝潢後清潔。以細節與誠實打動人心，乾淨就是最簡單的幸福。">
   <link rel="icon" href="IMG/Logo.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
     <img src="IMG/Logo.png" alt="Mina清潔LOGO" class="logo">
     <h1>Mina 清潔服務</h1>
@@ -20,40 +21,56 @@
     </nav>
   </header>
 
-  <section class="hero section-bg" style="background-image:url('IMG/C01.png');">
-    <h2>乾淨，就是最簡單的幸福</h2>
-    <p>專業居家清潔、辦公室清潔、裝潢後清潔，交給 Mina！</p>
+  <!-- Hero：背景可換、文字可左/右/置中 -->
+  <section class="section-bg align-right" style="background-image:url('IMG/C01.png');">
+    <div class="section-content">
+      <h2>乾淨，就是最簡單的幸福</h2>
+      <p>把難清的角落交給我們；你只需享受回到家的那口輕鬆。</p>
+    </div>
   </section>
 
-  <section class="content section-bg" id="about" style="background-image:url('IMG/C02.png');">
-    <h2>關於 Mina</h2>
-    <p>我是 Mina，因為太喜歡清潔帶來的成就感，所以選擇這份工作。  
-       每一次打掃，不只是清潔，更是讓生活煥然一新的過程。</p>
+  <!-- 關於：可微左、可加說明文字 -->
+  <section id="about" class="section-bg align-left" style="background-image:url('IMG/C02.png');">
+    <div class="section-content">
+      <h2>關於 Mina</h2>
+      <p>我相信，真正的清潔不是擦過去，而是把「時間與心安」還給你。</p>
+      <p>從細節到動線，每一次服務都以「可被信任」為標準。</p>
+    </div>
   </section>
 
-  <section class="content" id="services">
+  <!-- 服務項目：每個卡片都有背景，文字疊在上面 -->
+  <section id="services" class="content">
     <h2>服務項目</h2>
     <div class="service-grid">
       <div class="service-item" style="background-image:url('IMG/C01.png');">
-        <h3>居家清潔</h3>
-        <p>打造舒適安心的居家環境</p>
+        <div class="service-content">
+          <h3>居家清潔</h3>
+          <p>從客廳到廚衛，讓日常更好用、更好住。</p>
+        </div>
       </div>
       <div class="service-item" style="background-image:url('IMG/C02.png');">
-        <h3>辦公室清潔</h3>
-        <p>維持專業整潔的工作空間</p>
+        <div class="service-content">
+          <h3>辦公室清潔</h3>
+          <p>專業形象從環境開始，效率也跟著提起來。</p>
+        </div>
       </div>
       <div class="service-item" style="background-image:url('IMG/C03.png');">
-        <h3>裝潢後清潔</h3>
-        <p>徹底清除灰塵與殘留物</p>
+        <div class="service-content">
+          <h3>裝潢後清潔</h3>
+          <p>落塵、膠痕、細縫積灰，完工後的最後一道關鍵。</p>
+        </div>
       </div>
       <div class="service-item" style="background-image:url('IMG/C04.png');">
-        <h3>定期清潔方案</h3>
-        <p>長期維護，讓環境持續煥新</p>
+        <div class="service-content">
+          <h3>定期清潔方案</h3>
+          <p>固定時程、固定品質，讓整潔變成本能。</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="content" id="gallery">
+  <!-- 成果展示：改用 01.png、02.png… 輪播 -->
+  <section id="gallery" class="content">
     <h2>清潔成果展示</h2>
     <div class="slider">
       <div class="slides">
@@ -65,15 +82,19 @@
     </div>
   </section>
 
-  <section class="content section-bg" id="contact" style="background-image:url('IMG/C05.png');">
-    <h2>聯絡方式</h2>
-    <p>📞 電話：0926-350872</p>
-    <p>📧 Email：<a href="mailto:as821100@gmail.com">as821100@gmail.com</a></p>
-    <p>🌐 <a href="https://yaklon829.github.io/mina">官方網站</a></p>
-    <h3>加入 LINE 好友</h3>
-    <img src="IMG/line_qr.png" alt="LINE QR Code" class="qr">
+  <!-- 聯絡方式：背景可換，Email 為超連結，LINE QR -->
+  <section id="contact" class="section-bg align-center" style="background-image:url('IMG/C05.png');">
+    <div class="section-content">
+      <h2>聯絡方式</h2>
+      <p>📞 電話：0926-350872</p>
+      <p>📧 Email：<a href="mailto:as821100@gmail.com">as821100@gmail.com</a></p>
+      <p>🌐 <a href="https://yaklon829.github.io/mina">官方網站</a></p>
+      <h3>加入 LINE 好友</h3>
+      <img src="IMG/line_qr.png" alt="LINE QR Code" class="qr">
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Mina 清潔服務 | 設計 by Mina</p>
   </footer>
