@@ -1,2 +1,0 @@
-# mina
-mina清潔
