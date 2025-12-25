@@ -33,26 +33,33 @@ nav a {
   font-weight: bold;
 }
 
-/* Hero & Section 背景 */
+/* 區塊背景淡化 + 文字定位 */
 .section-bg {
   background-size: cover;
   background-position: center;
   color: white;
   position: relative;
   padding: 80px 20px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
 }
 .section-bg::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.4); /* 背景淡化 */
 }
-.section-bg h2, .section-bg p, .section-bg ul {
+.section-content {
   position: relative;
   z-index: 1;
+  max-width: 700px;
 }
+.align-left { justify-content: flex-start; text-align: left; }
+.align-right { justify-content: flex-end; text-align: right; }
+.align-center { justify-content: center; text-align: center; }
 
-/* Content */
+/* Content 區塊 */
 .content {
   max-width: 1200px;
   margin: auto;
@@ -60,7 +67,7 @@ nav a {
 }
 .content h2 { color: #4CAF50; }
 
-/* 服務項目 */
+/* 服務項目卡片 */
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -72,10 +79,11 @@ nav a {
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 60px 20px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  text-align: center;
+  min-height: 200px;
+  display: flex;
+  align-items: flex-end;
 }
 .service-item::before {
   content: "";
@@ -84,10 +92,13 @@ nav a {
   background: rgba(0,0,0,0.4);
   border-radius: 10px;
 }
-.service-item h3, .service-item p {
+.service-content {
   position: relative;
   z-index: 1;
+  padding: 20px;
+  text-align: center;
 }
+.service-content h3 { margin: 0; }
 
 /* Gallery 幻燈片 */
 .slider {
@@ -128,4 +139,5 @@ footer {
   header h1 { font-size: 1.5em; }
   .hero { padding: 30px 10px; }
   .slides img { width: 100%; }
+  .section-content { max-width: 90%; }
 }
