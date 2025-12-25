@@ -3,82 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mina 清潔服務</title>
-  <style>
-    body {
-      font-family: "Microsoft JhengHei", sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      height: 60px;
-      vertical-align: middle;
-    }
-    nav {
-      margin-top: 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-      background: #fff;
-    }
-    .hero img {
-      max-width: 300px;
-      border-radius: 10px;
-    }
-    .content {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .content h2 {
-      color: #4CAF50;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .gallery img {
-      width: 250px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    footer a {
-      color: #4CAF50;
-      text-decoration: none;
-    }
-  </style>
+  <title>Mina 清潔服務｜居家與辦公室清潔</title>
+  <meta name="description" content="Mina清潔服務，專業居家清潔、辦公室清潔、裝潢後清潔，乾淨就是最簡單的幸福。立即預約，享受成就感！">
+  <link rel="icon" href="IMG/Logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <img src="Logo.jpg" alt="Mina清潔LOGO">
+    <img src="IMG/Logo.png" alt="Mina清潔LOGO" class="logo">
     <h1>Mina 清潔服務</h1>
     <nav>
       <a href="#about">關於我們</a>
       <a href="#services">服務項目</a>
+      <a href="#gallery">成果展示</a>
       <a href="#contact">聯絡方式</a>
     </nav>
   </header>
@@ -86,7 +23,7 @@
   <section class="hero">
     <h2>乾淨，就是最簡單的幸福</h2>
     <p>專業居家清潔、辦公室清潔、裝潢後清潔，交給 Mina！</p>
-    <img src="cleaning.jpg" alt="清潔示意圖">
+    <img src="IMG/c01.jpg" alt="清潔示意圖">
   </section>
 
   <section class="content" id="about">
@@ -103,10 +40,17 @@
       <li>裝潢後清潔</li>
       <li>定期清潔方案</li>
     </ul>
-    <div class="gallery">
-      <img src="service1.jpg" alt="居家清潔">
-      <img src="service2.jpg" alt="辦公室清潔">
-      <img src="service3.jpg" alt="裝潢後清潔">
+  </section>
+
+  <section class="content" id="gallery">
+    <h2>清潔成果展示</h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="IMG/c01.jpg" alt="成果1">
+        <img src="IMG/c02.jpg" alt="成果2">
+        <img src="IMG/c03.jpg" alt="成果3">
+        <img src="IMG/c04.jpg" alt="成果4">
+      </div>
     </div>
   </section>
 
@@ -115,13 +59,14 @@
     <p>📞 電話：0926-350872</p>
     <p>📧 Email：as821100@gmail.com</p>
     <p>🌐 <a href="https://yaklon829.github.io/mina">官方網站</a></p>
+    <h3>加入 LINE 好友</h3>
+    <img src="IMG/line_qr.png" alt="LINE QR Code" class="qr">
   </section>
 
   <footer>
     <p>© 2025 Mina 清潔服務 | 設計 by Mina</p>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
-
 </html>
-
-
